@@ -1,0 +1,9 @@
+CREATE DATABASE parqueadero;
+USE parqueadero;
+
+CREATE TABLE registros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    placa VARCHAR(10) NOT NULL,
+    tipo ENUM('carro', 'moto') NOT NULL,
+    tiempo TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
